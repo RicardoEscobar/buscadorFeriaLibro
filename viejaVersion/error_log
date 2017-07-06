@@ -1,0 +1,8 @@
+[30-Jun-2017 22:37:57 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ivec/public_html/busqueda-libros/index.php on line 35
+[30-Jun-2017 22:38:39 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ivec/public_html/busqueda-libros/index.php on line 35
+[30-Jun-2017 22:38:42 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ivec/public_html/busqueda-libros/index.php on line 35
+[30-Jun-2017 22:38:49 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ivec/public_html/busqueda-libros/index.php on line 35
+[30-Jun-2017 22:38:52 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ivec/public_html/busqueda-libros/index.php on line 35
+[30-Jun-2017 22:58:32 UTC] PHP Notice:  Array to string conversion in /home/ivec/public_html/busqueda-libros/index.php on line 39
+[30-Jun-2017 22:58:41 UTC] PHP Notice:  Array to string conversion in /home/ivec/public_html/busqueda-libros/index.php on line 39
+[30-Jun-2017 22:59:01 UTC] PHP Notice:  Array to string conversion in /home/ivec/public_html/busqueda-libros/index.php on line 39
