@@ -1,11 +1,11 @@
 <?php
 $server="localhost";
 
-$dbuser="root";
+$dbuser="mlportaldb";
 
-$dbpass="";
+$dbpass="mlportaldb";
 
-$dbname="books";
+$dbname="mlportaldb";
 
 $db=new mysqli($server,$dbuser,$dbpass,$dbname);
 
