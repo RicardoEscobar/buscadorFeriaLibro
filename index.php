@@ -1,4 +1,4 @@
-<?php 
+<?php
 include("inc/connection.php");
 include("inc/BuscadorFullText.php");
 header('Content-Type: text/html; charset=utf8');
@@ -24,15 +24,15 @@ header('Content-Type: text/html; charset=utf8');
 
 </div>
 
-<?php 
+<?php
 if(isset($_POST['buscar'])){
 /*----------------------------Busqueda----------------------------------------------------------------*/
     $obj2 = new BuscadorFullText($_POST['palabra'], 'libros');
-    
-    $obj2->addCamposFullText('TITULO, AUTOR, EDITORIAL, STAND');  
+
+    $obj2->addCamposFullText('TITULO, AUTOR, EDITORIAL, STAND');
     $obj2->addCamposResultado(array('idLibro','TITULO', 'AUTOR', 'EDITORIAL', 'STAND', 'URLSTAND'));
     $consulta   = $obj2->getConsultaMysql();
-    /*echo sprintf($consulta, 0,10); */
+    /*echo sprintf($consulta, 0,10);*/
     $result1 = $db->query(sprintf($consulta, 0,10));
 /*----------------------------/Busqueda---------------------------------------------------------------*/
    ?>
@@ -54,7 +54,7 @@ if(isset($_POST['buscar'])){
 
     //Construir y ejecutar el query
         $cont=0;
-    
+
     while($row=$result1->fetch_assoc()){
         $cont++;
         ?>
@@ -146,4 +146,3 @@ if(isset($_POST['buscar'])){
 }
 
 ?>
-
