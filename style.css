@@ -1,0 +1,121 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*-------------------------------------------------------------------*/
+img{
+    width: 50%;
+}
+table tr td{
+    width: 20%;
+}
+#searchform {
+    width: 280px;
+  height:30px;
+    padding: 8px;
+  margin:50px auto;
+    background: #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 2px 0 rgba(255,255,255,.5);
+} 
+#searchform input {
+    width: 200px;
+  height:30px;
+    padding: 5px;
+    float: left;
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.4) inset;
+}
+#searchform input:focus {
+    outline: 0;
+  height:30px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+#searchform input:-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+#searchform input:-moz-placeholder {
+    color: #999;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
+#searchform input:-ms-input-placeholder {
+    color: #999;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}   
+#searchform button {
+    position: relative;
+    float: right;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    font-size:15px;
+    color: #fff;
+    background: #438cdb;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}  
+#searchform button:hover{
+    background: #2672e0;
+}
+#searchform button:active,
+#searchform button:focus{
+    background: #2672e0;
+}
+#searchform button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #438cdb transparent;
+    top: 8px;
+    left: -5px;
+}
+#searchform button:hover:before{
+    border-right-color: #2672e0;
+}
+#searchform button:focus:before{
+    border-right-color: #2672e0;
+}   

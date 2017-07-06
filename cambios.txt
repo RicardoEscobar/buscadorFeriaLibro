@@ -1,0 +1,19 @@
+Agregue una carpeta llamada "inc", donde se encuentran "connection.php" (la coneccion a la DB) y "BuscadorFullText.php" (un PHP con funciones).
+
+Dentro del index, se agregan los "includes" correspondientes de "connection.php" y "BuscadorFullText".
+En la secciònd e "busqueda", se utilizan las siguientes funciones:
+
+$obj2 = new BuscadorFullText($_POST['palabra'], 'libros'); // Lee la palabra escrita y la tabla de la DB.
+    
+$obj2->addCamposFullText('TITULO, AUTOR, EDITORIAL, STAND');  // Los capos de la DB con indice de FULLTEXT.
+
+$obj2->addCamposResultado(array('idLibro','TITULO', 'AUTOR', 'EDITORIAL', 'STAND', 'URLSTAND'));  //Los campos que se quieren como resultado en la consulta.
+
+$consulta   = $obj2->getConsultaMysql(); // Se carga la consulta en la variable "$consulta".
+
+/*echo sprintf($consulta, 0,10); */ // Para visualizar como queda la consulta con limites.
+
+$result1 = $db->query(sprintf($consulta, 0,10)); // Se carga la consulta con los limites establecidos en la variable "$result1".
+
+Limites= la cantidad de resultados a mostrar.
+FULLTEXT= ALTER TABLE buscador ADD FULLTEXT(TITULO, AUTOR, EDITORIAL, STAND);
