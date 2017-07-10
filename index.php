@@ -33,7 +33,7 @@ if(isset($_POST['buscar'])){
     $obj2->addCamposResultado(array('idLibro','TITULO', 'AUTOR', 'EDITORIAL', 'STAND', 'URLSTAND'));
     $consulta   = $obj2->getConsultaMysql();
     /*echo sprintf($consulta, 0,10);*/
-    $result1 = $db->query(sprintf($consulta, 0, 1000));
+    $result1 = $db->query(sprintf($consulta, 0, 10));
 /*----------------------------/Busqueda---------------------------------------------------------------*/
    ?>
    <table width="100%" border="0" align="center" cellpadding="1" cellspacing="1">
