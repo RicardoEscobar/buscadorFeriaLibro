@@ -66,7 +66,7 @@ if(isset($_POST['buscar'])){
 
     /*echo sprintf($consulta, 0,10);*/
 
-    $result1 = $db->query(sprintf($consulta, 0, 1000));
+    $result1 = $db->query(sprintf($consulta, 0, 10));
 
 /*----------------------------/Busqueda---------------------------------------------------------------*/
 
@@ -148,15 +148,15 @@ if(isset($_POST['buscar'])){
                   </div>
 
                 </div>
-               
+
                 <button id="myBtn=<?php echo $cont ?>" onclick="share(<?php echo $cont ?>)"><?=utf8_encode ($row['STAND'])?></button>
-               
+
                 </td>
-                
+
            </tr>
 
            <?php
-            
+
             $cont++;
 
 
@@ -175,4 +175,3 @@ if(isset($_POST['buscar'])){
 
 
 ?>
-
